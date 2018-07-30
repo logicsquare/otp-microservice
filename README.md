@@ -1,4 +1,4 @@
-# OTP-Microservice [node >= 8](https://badgen.net/badge/node/%3E=8/green)
+# OTP-Microservice ![node >= 8](https://badgen.net/badge/node/%3E=8/green)
 
 
 This microservice is meant to be used for generating an One Time Password (OTP) for a valid mobile number, SMS it to the said mobile using a SMS carrier (options are `Twilio` and `Text Local`), and later, also to validate the received OTP against the given mobile number.
