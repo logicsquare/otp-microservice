@@ -21,22 +21,6 @@ const exampleNos = [
  * @apiParam  {String} action Either "validate" or "generate"
  * @apiParam  {String} mobile A valid mobile number (e.g. +6581234567 or +12015550123)
  * @apiParam  {String} [otpReceived] The OTP received `'validate' Only`
- * 
- * 
- * @apiSuccess (200) {type} name description
- * 
- * @apiParamExample  {type} Request-Example:
- * {
- *     property : value
- * }
- * 
- * 
- * @apiSuccessExample {type} Success-Response:
- * {
- *     property : value
- * }
- * 
- * 
  */
 module.exports = async (req, res) => {
   // console.log(req);
