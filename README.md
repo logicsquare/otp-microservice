@@ -10,7 +10,8 @@ This microservice is build using [Zeit's Micro Framework](https://github.com/zei
 # Running the Micro Service
 
 0. Clone this git repo, `cd` and run `npm install`. Make sure `node` (>= 8.0.0)  and `redis` is installed and ready.
-1. Rename the file `env.SAMPLE` to `.env` and populate its fields as required. (Note that `.env` file is gitignored, so you need one in each of the environments you will be running the microservice on. For further  details, check [dotenv](https://www.npmjs.com/package/dotenv))
+1.1. Rename the file `env.SAMPLE` to `.env` and populate its fields as required. (Note that `.env` file is gitignored, so you need one in each of the environments you will be running the microservice on. For further  details, check [dotenv](https://www.npmjs.com/package/dotenv))
+1.2. Change the value of the `port` the microservice should listen to in the *config* section of `package.json` (`9090` is used by default)
 2. To run the microservice in dev mode, use `npm run dev`. In prod, just use `npm start` (works with latest versions of `pm2` as well)
 
 # API
