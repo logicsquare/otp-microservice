@@ -3,7 +3,7 @@
 
 This microservice is meant to be used for generating an One Time Password (OTP) for a valid mobile number, SMS it to the said mobile using a SMS carrier (options are `Twilio` and `Text Local`), and later, also to validate the received OTP against the given mobile number.
 
-It may be noted that this microservice may be used _only_ for Identification/Verification and *not* for Authentication/Authorization.
+**It may be noted that this microservice may be used _only_ for Identification/Verification and *not* for Authentication/Authorization.**
 
 This microservice is build using [Zeit's Micro Framework](https://github.com/zeit/micro). It uses Redis as a data store.
 
@@ -35,3 +35,4 @@ This microservice is build using [Zeit's Micro Framework](https://github.com/zei
 # TBD
 * Restrict number of validation attempts
 * Provide Project/App Identification by means of API keys
+* Write tests!
