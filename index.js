@@ -28,7 +28,9 @@ module.exports = async (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*")
   res.setHeader("Access-Control-Request-Method", "*")
   res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PUT")
-  res.setHeader("Access-Control-Allow-Headers", "*")
+  // res.setHeader("Access-Control-Allow-Headers", "*")
+  res.setHeader("Access-Control-Allow-Headers", "authorization, origin, x-requested-with, x-http-method-override, content-type, Overwrite, Destination, Depth, User-Agent, Translate, Range, Content-Range, Timeout, X-File-Size, If-Modified-Since, X-File-Name, Cache-Control, Location, Lock-Token")
+  
   if (req.method === "OPTIONS") {
     res.writeHead(200)
     res.end()
